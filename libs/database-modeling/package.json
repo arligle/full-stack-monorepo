@@ -1,0 +1,33 @@
+{
+  "name": "database-modeling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "cross-env DB_MIGRATING=true tsx src/db/migrate.ts",
+    "db_aiodb:introspect": "drizzle-kit introspect --config=src/aiodb.config.ts",
+    "db_aiodb:generate": "drizzle-kit generate --config=src/aiodb.config.ts",
+    "db_aiodb:migrate": "drizzle-kit migrate --config=src/aiodb.config.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "dotenv-expand": "^11.0.6",
+    "drizzle-orm": "^0.32.1",
+    "drizzle-zod": "^0.5.1",
+    "pg": "^8.12.0",
+    "postgres": "^3.4.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.6",
+    "cross-env": "^7.0.3",
+    "drizzle-kit": "^0.23.0",
+    "tsc-alias": "^1.8.10",
+    "typescript": "^5.5.4"
+  }
+}

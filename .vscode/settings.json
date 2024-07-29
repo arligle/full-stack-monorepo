@@ -1,4 +1,11 @@
 {
-  "cSpell.words": ["nestjs"],
+  "cSpell.words": [
+    "aiodb",
+    "backages",
+    "biomejs",
+    "commitlint",
+    "fkey",
+    "nestjs"
+  ],
   "css.lint.unknownAtRules": "ignore"
 }
