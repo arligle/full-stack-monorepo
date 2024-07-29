@@ -1,0 +1,54 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "targetDefaults": {
+    "dev": {
+      "dependsOn": [
+        "^dev"
+      ],
+      "cache": true
+    },
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true
+    },
+    "start": {
+      "dependsOn": [
+        "^start"
+      ],
+      "cache": true
+    },
+    "db:generate": {
+      "dependsOn": [
+        "^db:generate"
+      ],
+      "cache": true
+    },
+    "db:migrate": {
+      "dependsOn": [
+        "^db:migrate"
+      ],
+      "cache": true
+    },
+    "db_aiodb:introspect": {
+      "dependsOn": [
+        "^db_aiodb:introspect"
+      ],
+      "cache": true
+    },
+    "db_aiodb:generate": {
+      "dependsOn": [
+        "^db_aiodb:generate"
+      ],
+      "cache": true
+    },
+    "db_aiodb:migrate": {
+      "dependsOn": [
+        "^db_aiodb:migrate"
+      ],
+      "cache": true
+    }
+  },
+  "defaultBase": "main"
+}

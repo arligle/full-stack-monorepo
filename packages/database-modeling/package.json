@@ -2,7 +2,7 @@
   "name": "database-modeling",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "disk/schema/drizzle-schema.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
