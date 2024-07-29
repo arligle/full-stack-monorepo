@@ -2,11 +2,37 @@
   "name": "full-stack-monorepo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "private": true,
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.12.0",
+    "pnpm": ">=9.1.0"
+  },
+  "packageManager": "pnpm@9.1.0",
+  "scripts": {
+    "lint": "biome lint .",
+    "lint:ws": "pnpm dlx sherif@latest",
+    "lint:ws-fix": "pnpm dlx sherif@latest --fix",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@types/node": "^20.14.12",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.7"
+  }
 }
